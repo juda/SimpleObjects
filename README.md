@@ -6,4 +6,4 @@ I write all the Haskell code about a simple type system implementing object calc
 
 Some basic features, such as stack project, unit tests and lexer/parser are involved.
 
-For more details, see the [Readme](objects/readme.md) file in the folder.
+For more details, see the [Readme](objects/README.md) file in the folder.
