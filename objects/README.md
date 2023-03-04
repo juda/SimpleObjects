@@ -222,8 +222,7 @@ If we evaluate this code, the result should be `20`.
 ## Interpreter ##
 
 The interpreter uses a standard environment that keeps track of local variables
-and the values associated with them. Moreover, it also uses a memory model, like the
-interpreter in Lecture 12.
+and the values associated with them. Moreover, it also uses a memory model.
 
 The type `Mem` is a model of memory:
 
@@ -297,7 +296,7 @@ with an updated implementation of `l`. The update of `l` should not affect `o1`
 
 
 In the monadic interpreter the code completely encapsulates the memory management. For
-instance, the refactored code for binary operations in the interpreter for Lecture 12 is:
+instance, the refactored code for binary operations is:
 
 ```
 evaluate (Binary op a b) env = do
@@ -325,8 +324,7 @@ evaluate (Mutable e) env = do     -- @Mutable(2+3)
 ```
 
 We refactor the code in `Target.hs` and write in
-monadic style, so that all memory management is encapsulated. You can create
-auxiliary functions, such as `newMemory` to help you with this.
+monadic style, so that all memory management is encapsulated. 
 
 
 
